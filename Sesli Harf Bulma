@@ -1,0 +1,28 @@
+//Videodaki kod fazlalığı olan "return;" silinmiştir.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+        char harf = girdi.next().charAt(0);
+
+        switch (harf) {
+            case 'a':
+            case 'e':
+            case 'ı':
+            case 'i':
+            case 'o':
+            case 'ö':
+            case 'u':
+            case 'ü':
+                System.out.println("Harf seslidir.");
+                break;
+            default: System.out.println("Harf sesli değildir");
+
+
+        }
+        
+    }
+
+}
