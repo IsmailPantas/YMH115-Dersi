@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.println("Boyunuzu giriniz:");
+        float boy = girdi.nextFloat();
+
+        System.out.println("Kilonuzu giriniz:");
+        float kilo = girdi.nextFloat();
+
+        float vucutKitleEndeksi = kilo / (boy * boy);
+        System.out.println("Vücut kitle endeksi:" + vucutKitleEndeksi);
+
+        if (vucutKitleEndeksi<18.5){
+            System.out.println("İdeal kilonuzun altındasınız.");
+        }
+        else if (vucutKitleEndeksi<24.99) {
+            System.out.println("İdeal kilonuzdasınız.");
+        }
+        else if (vucutKitleEndeksi<29.9) {
+            System.out.println("İdeal kilonuzun üzerindesniz.");
+        }
+        else if (vucutKitleEndeksi<39.9) {
+            System.out.println("İdeal kilonuzun çok üzerindesiniz(Obez)");
+        }
+
+    }
+}
