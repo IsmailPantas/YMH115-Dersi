@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("Birinci sayıyı giriniz:");
+        int sayi = girdi.nextInt();
+        System.out.println("İkinci sayıyı giriniz:");
+        int sayi1 = girdi.nextInt();
+
+        int sayiOrtalamasi = (sayi + sayi1) / 2;
+
+        System.out.println("Girdiğiniz iki sayının ortalaması: " + sayiOrtalamasi);
+    }
+}
