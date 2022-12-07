@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+       final double piSayisi = 3.14;
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("Bir yarıçap değeri giriniz: ");
+        double yariCap = girdi.nextDouble();
+
+        double cevre = 2*piSayisi*yariCap;
+
+        System.out.println("Girdiğiniz yarıçap değerindeki dairenin çevresi: " + cevre);
+
+    }
+}
