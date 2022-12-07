@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("Faktöriyelini hesaplamak istediğiniz sayıyı girin:");
+        int sayi = girdi.nextInt();
+        int faktoriyel = 1;
+        for (int i=1; i<=sayi; i++){
+            faktoriyel = i*faktoriyel;
+        }
+        System.out.println("Girdiğiniz sayının faktöriyeli: " + faktoriyel);
+    }
+}
