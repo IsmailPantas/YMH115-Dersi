@@ -1,4 +1,4 @@
-//Videodaki kod fazlalığı olan "return;" silinmiştir.
+//Videodaki kod fazlalığı olan "return;" düzeltilmiştir.
 
 import java.util.Scanner;
 public class Main {
