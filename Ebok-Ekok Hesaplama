@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("Birinci sayıyı giriniz:");
+        int sayi = girdi.nextInt();
+        System.out.println("İkinci sayıyı giriniz:");
+        int sayi1 = girdi.nextInt();
+
+        int ebob=1, ekok;
+
+        for(int i = 1; i <= sayi && i <= sayi1; ++i)
+        {
+            if(sayi % i == 0 && sayi1 % i == 0)
+                ebob = i;
+        }
+
+        ekok = (sayi * sayi1) / ebob;
+        System.out.println(sayi + " ve " + sayi1 + " 'in EBOB'u: " + ebob );
+        System.out.println(sayi + " ve " + sayi1 + " 'in EKOK'u: " + ekok);
+    }
+}
