@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Bir Değer Giriniz");
+        Scanner girdi = new Scanner(System.in);
+        int sayi = girdi.nextInt();
+        boolean asalMi = true;
+
+        if (sayi<2){
+            System.out.println("2'den küçük asal sayı mevcut değildir");
+        }
+
+        for (int i = 2; i < sayi; i++) {
+            if (sayi % i == 0) {
+                asalMi = false;
+                break;
+            }
+
+
+        }
+
+        if (asalMi) {
+            System.out.println("Sayı Asaldır");
+        } else {
+            System.out.println("Sayı Asal Değil");
+        }
+    }
+}
