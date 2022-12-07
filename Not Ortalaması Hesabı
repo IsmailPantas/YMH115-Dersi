@@ -1,0 +1,32 @@
+//Videodan sonra veri tipleri düzeltildi.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+        System.out.println("Vize notunuzu giriniz:");
+        float vizeNot = girdi.nextInt();
+
+        System.out.println("Final notunuzu giriniz:");
+        float finalNot = girdi.nextInt();
+
+        if (finalNot<50){
+            System.out.println("Final notunuz 50'nin aşşağısı olduğundan kaldınız");
+        }
+        else {
+            float toplamOrtalama = vizeNot * 40/100 + finalNot *60/100;
+
+
+            if (toplamOrtalama>=50){
+                System.out.println("Tebrikler geçtiniz");
+            }
+            else {
+                System.out.println("Maalesef kaldınız");
+            }
+        }
+
+
+    }
+}
